@@ -1,0 +1,20 @@
+/* Styles injected into web pages by the content script */
+
+/* Example: Custom highlighting class */
+.extension-highlight {
+  background-color: yellow;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Example: Custom tooltip */
+.extension-tooltip {
+  position: fixed;
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 10000;
+  pointer-events: none;
+}
