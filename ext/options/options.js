@@ -1,9 +1,9 @@
 import Sval from '../lib/sval.js';
 
 const interpreter = new Sval({
-    ecmaVer: 'latest',
-    sourceType: 'module',
-    sandBox: false,
+  ecmaVer: 'latest',
+  sourceType: 'module',
+  sandBox: false,
 });
 
 // Storage keys for each code section
@@ -43,7 +43,7 @@ swCodeArea.addEventListener('blur', saveAllCode);
 async function loadAllCode() {
   try {
     const result = await chrome.storage.sync.get(Object.values(STORAGE_KEYS));
-    
+
     if (result[STORAGE_KEYS.options]) {
       optionsCodeArea.value = result[STORAGE_KEYS.options];
     }
@@ -53,12 +53,12 @@ async function loadAllCode() {
     if (result[STORAGE_KEYS.sw]) {
       swCodeArea.value = result[STORAGE_KEYS.sw];
     }
-    
+
     // Auto-run options code on load
     if (result[STORAGE_KEYS.options]) {
       runOptionsCode();
     }
-    
+
     showStatus('Code loaded', 'success');
   } catch (error) {
     console.error('Error loading code:', error);
@@ -71,18 +71,18 @@ async function saveAllCode() {
   const optionsCode = optionsCodeArea.value;
   const contentCode = contentCodeArea.value;
   const swCode = swCodeArea.value;
-  
+
   try {
     await chrome.storage.sync.set({
       [STORAGE_KEYS.options]: optionsCode,
       [STORAGE_KEYS.content]: contentCode,
       [STORAGE_KEYS.sw]: swCode
     });
-    
+
     showStatus('All code saved successfully!', 'success');
-    
+
     // Notify all parts of the extension that code has been updated
-    chrome.runtime.sendMessage({ 
+    chrome.runtime.sendMessage({
       action: 'codeUpdated',
       optionsCode,
       contentCode,
@@ -90,7 +90,7 @@ async function saveAllCode() {
     }).catch(() => {
       // Ignore errors if no listeners
     });
-    
+
   } catch (error) {
     console.error('Error saving code:', error);
     showStatus('Error saving code', 'error');
@@ -114,7 +114,7 @@ function runOptionsCode() {
     showStatus('No code to run', 'error');
     return;
   }
-  
+
   try {
     interpreter.run(code);
     showStatus('Options code executed', 'success');
@@ -128,7 +128,7 @@ function runOptionsCode() {
 function showStatus(message, type) {
   statusDiv.textContent = message;
   statusDiv.className = `status ${type}`;
-  
+
   // Clear status after 3 seconds
   setTimeout(() => {
     statusDiv.textContent = '';
@@ -150,4 +150,3 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
     }
   }
 });
-

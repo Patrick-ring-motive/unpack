@@ -10,10 +10,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   actionButton.addEventListener('click', async () => {
     // Get the active tab
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    const [tab] = await chrome.tabs.query({
+      active: true,
+      currentWindow: true
+    });
 
     // Send a message to the content script
-    chrome.tabs.sendMessage(tab.id, { action: 'buttonClicked' }, (response) => {
+    chrome.tabs.sendMessage(tab.id, {
+      action: 'buttonClicked'
+    }, (response) => {
       if (chrome.runtime.lastError) {
         console.error('Error:', chrome.runtime.lastError);
         return;
@@ -22,7 +27,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     // Example: Store data in chrome.storage
-    chrome.storage.sync.set({ lastClicked: new Date().toISOString() }, () => {
+    chrome.storage.sync.set({
+      lastClicked: new Date().toISOString()
+    }, () => {
       console.log('Data saved to storage');
     });
   });
