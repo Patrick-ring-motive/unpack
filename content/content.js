@@ -315,8 +315,7 @@
     var t = "function" == typeof Symbol && e[Symbol.iterator],
       r = 0;
     return t ?
-      t.call(e) :
-      {
+      t.call(e) : {
         next: function() {
           return {
             value: (e = e && r >= e.length ? void 0 : e) && e[r++],
@@ -6019,9 +6018,7 @@
               (n = void 0 !== n && n),
               (s = i.getVar),
               (s = void 0 !== s && s),
-              "Super" !== t.object.type ?
-              [3, 2] :
-              [
+              "Super" !== t.object.type ? [3, 2] : [
                 5,
                 b(
                   Nt(t.object, r, {
@@ -6037,8 +6034,7 @@
           case 3:
             ((a = e.sent()), (e.label = 4));
           case 4:
-            return n ?
-              [2, a] :
+            return n ? [2, a] :
               ((c = !1), t.computed ? [5, b(L(t.property, r))] : [3, 6]);
           case 5:
             return ((o = e.sent()), [3, 7]);
@@ -6058,15 +6054,12 @@
                   f(u, h, {
                     set: l,
                   }),
-                  [2, new kt(u, h)]) :
-                [2, new kt(a, o)]) :
+                  [2, new kt(u, h)]) : [2, new kt(a, o)]) :
               ((l = Z(a, o)),
                 "Super" === t.object.type && l ?
                 ((u = r.find("this").get()),
                   t.optional && null == u ? [2, void 0] : [2, l.call(u)]) :
-                t.optional && null == a ?
-                [2, void 0] :
-                [2, a[o]])
+                t.optional && null == a ? [2, void 0] : [2, a[o]])
             );
         }
       })
@@ -6136,10 +6129,8 @@
             ((i = []), (n = 0), (e.label = 1));
           case 1:
             return n < t.elements.length ?
-              "SpreadElement" !== (s = t.elements[n]).type ?
-              [3, 3] :
-              ((o = (a = i).concat), [5, b(Bt(s, r))]) :
-              [3, 6];
+              "SpreadElement" !== (s = t.elements[n]).type ? [3, 3] :
+              ((o = (a = i).concat), [5, b(Bt(s, r))]) : [3, 6];
           case 2:
             return ((i = o.apply(a, [e.sent()])), [3, 5]);
           case 3:
@@ -6161,8 +6152,7 @@
             ((i = {}), (n = 0), (e.label = 1));
           case 1:
             return n < t.properties.length ?
-              "SpreadElement" !== (s = t.properties[n]).type ?
-              [3, 3] :
+              "SpreadElement" !== (s = t.properties[n]).type ? [3, 3] :
               ((a = m),
                 (o = [i]),
                 [
@@ -6172,14 +6162,11 @@
                       spreadProps: !0,
                     }),
                   ),
-                ]) :
-              [3, 11];
+                ]) : [3, 11];
           case 2:
             return (a.apply(void 0, o.concat([e.sent()])), [3, 10]);
           case 3:
-            return ((c = void 0), (h = s.key), s.computed) ?
-              [5, b(L(h, r))] :
-              [3, 5];
+            return ((c = void 0), (h = s.key), s.computed) ? [5, b(L(h, r))] : [3, 5];
           case 4:
             return ((c = e.sent()), [3, 8]);
           case 5:
@@ -6221,8 +6208,7 @@
       var i, n;
       return v(this, function(e) {
         return t.id && t.id.name ?
-          ((i = new P(r)), (n = R(t, i)), i.const(t.id.name, n), [2, n]) :
-          [2, R(t, r)];
+          ((i = new P(r)), (n = R(t, i)), i.const(t.id.name, n), [2, n]) : [2, R(t, r)];
       });
     },
     UnaryExpression: function(t, r) {
@@ -6268,16 +6254,14 @@
           case 10:
             return [2, void e.sent()];
           case 11:
-            return "Identifier" !== i.type ?
-              [3, 13] :
-              [
-                5,
-                b(
-                  It(i, r, {
-                    throwErr: !1,
-                  }),
-                ),
-              ];
+            return "Identifier" !== i.type ? [3, 13] : [
+              5,
+              b(
+                It(i, r, {
+                  throwErr: !1,
+                }),
+              ),
+            ];
           case 12:
             return [2, typeof e.sent()];
           case 13:
@@ -6285,16 +6269,14 @@
           case 14:
             return [2, typeof e.sent()];
           case 15:
-            return "MemberExpression" !== i.type ?
-              [3, 17] :
-              [
-                5,
-                b(
-                  Tt(i, r, {
-                    getVar: !0,
-                  }),
-                ),
-              ];
+            return "MemberExpression" !== i.type ? [3, 17] : [
+              5,
+              b(
+                Tt(i, r, {
+                  getVar: !0,
+                }),
+              ),
+            ];
           case 16:
             return [2, e.sent().del()];
           case 17:
@@ -6316,29 +6298,25 @@
       return v(this, function(e) {
         switch (e.label) {
           case 0:
-            return "Identifier" !== (i = t.argument).type ?
-              [3, 2] :
-              [
-                5,
-                b(
-                  It(i, r, {
-                    getVar: !0,
-                  }),
-                ),
-              ];
+            return "Identifier" !== (i = t.argument).type ? [3, 2] : [
+              5,
+              b(
+                It(i, r, {
+                  getVar: !0,
+                }),
+              ),
+            ];
           case 1:
             return ((n = e.sent()), [3, 5]);
           case 2:
-            return "MemberExpression" !== i.type ?
-              [3, 4] :
-              [
-                5,
-                b(
-                  Tt(i, r, {
-                    getVar: !0,
-                  }),
-                ),
-              ];
+            return "MemberExpression" !== i.type ? [3, 4] : [
+              5,
+              b(
+                Tt(i, r, {
+                  getVar: !0,
+                }),
+              ),
+            ];
           case 3:
             return ((n = e.sent()), [3, 5]);
           case 4:
@@ -6357,8 +6335,7 @@
       return v(this, function(e) {
         switch (e.label) {
           case 0:
-            return "PrivateIdentifier" !== t.left.type ?
-              [3, 2] :
+            return "PrivateIdentifier" !== t.left.type ? [3, 2] :
               ((i = t.left.name), [5, b(L(t.right, r))]);
           case 1:
             return ((n = (n = e.sent())[E] || {}), [3, 5]);
@@ -6425,17 +6402,15 @@
       return v(this, function(e) {
         switch (e.label) {
           case 0:
-            return "Identifier" !== (i = t.left).type ?
-              [3, 2] :
-              [
-                5,
-                b(
-                  It(i, r, {
-                    getVar: !0,
-                    throwErr: !1,
-                  }),
-                ),
-              ];
+            return "Identifier" !== (i = t.left).type ? [3, 2] : [
+              5,
+              b(
+                It(i, r, {
+                  getVar: !0,
+                  throwErr: !1,
+                }),
+              ),
+            ];
           case 1:
             return (
               (n = e.sent()) ||
@@ -6444,16 +6419,14 @@
               [3, 7]
             );
           case 2:
-            return "MemberExpression" !== i.type ?
-              [3, 4] :
-              [
-                5,
-                b(
-                  Tt(i, r, {
-                    getVar: !0,
-                  }),
-                ),
-              ];
+            return "MemberExpression" !== i.type ? [3, 4] : [
+              5,
+              b(
+                Tt(i, r, {
+                  getVar: !0,
+                }),
+              ),
+            ];
           case 3:
             return ((n = e.sent()), [3, 7]);
           case 4:
@@ -6584,19 +6557,16 @@
       return v(this, function(e) {
         switch (e.label) {
           case 0:
-            return "MemberExpression" !== t.callee.type ?
-              [3, 5] :
-              [
-                5,
-                b(
-                  Tt(t.callee, r, {
-                    getObj: !0,
-                  }),
-                ),
-              ];
+            return "MemberExpression" !== t.callee.type ? [3, 5] : [
+              5,
+              b(
+                Tt(t.callee, r, {
+                  getObj: !0,
+                }),
+              ),
+            ];
           case 1:
-            return ((i = e.sent()), t.callee.optional && null == i) ?
-              [2, void 0] :
+            return ((i = e.sent()), t.callee.optional && null == i) ? [2, void 0] :
               ((n = void 0),
                 (s = !1),
                 t.callee.computed ? [5, b(L(t.callee.property, r))] : [3, 3]);
@@ -6653,10 +6623,8 @@
             ((c = []), (h = 0), (e.label = 8));
           case 8:
             return h < t.arguments.length ?
-              "SpreadElement" !== (l = t.arguments[h]).type ?
-              [3, 10] :
-              ((p = (u = c).concat), [5, b(Bt(l, r))]) :
-              [3, 13];
+              "SpreadElement" !== (l = t.arguments[h]).type ? [3, 10] :
+              ((p = (u = c).concat), [5, b(Bt(l, r))]) : [3, 13];
           case 9:
             return ((c = p.apply(u, [e.sent()])), [3, 12]);
           case 10:
@@ -6721,10 +6689,8 @@
             ((s = []), (a = 0), (e.label = 2));
           case 2:
             return a < t.arguments.length ?
-              "SpreadElement" !== (o = t.arguments[a]).type ?
-              [3, 4] :
-              ((h = (c = s).concat), [5, b(Bt(o, r))]) :
-              [3, 7];
+              "SpreadElement" !== (o = t.arguments[a]).type ? [3, 4] :
+              ((h = (c = s).concat), [5, b(Bt(o, r))]) : [3, 7];
           case 3:
             return ((s = h.apply(c, [e.sent()])), [3, 6]);
           case 4:
@@ -6740,16 +6706,13 @@
     },
     MetaProperty: function(t, r) {
       return v(this, function(e) {
-        return "new" === t.meta.name && "target" === t.property.name ?
-          [2, r.find(bt).get()] :
-          "import" === t.meta.name && "meta" === t.property.name ?
-          [
+        return "new" === t.meta.name && "target" === t.property.name ? [2, r.find(bt).get()] :
+          "import" === t.meta.name && "meta" === t.property.name ? [
             2,
             {
               url: "",
             },
-          ] :
-          [2];
+          ] : [2];
       });
     },
     SequenceExpression: function(t, r) {
@@ -6759,9 +6722,7 @@
           case 0:
             ((n = 0), (e.label = 1));
           case 1:
-            return n < t.expressions.length ?
-              [5, b(L(t.expressions[n], r))] :
-              [3, 4];
+            return n < t.expressions.length ? [5, b(L(t.expressions[n], r))] : [3, 4];
           case 2:
             ((i = e.sent()), (e.label = 3));
           case 3:
@@ -6789,8 +6750,7 @@
             return (a = i.shift()) ? ((o = s), [5, b(Vt(a))]) : [3, 5];
           case 2:
             return ((s = o + e.sent()), (a = n.shift())) ?
-              ((c = s), [5, b(L(a, r))]) :
-              [3, 4];
+              ((c = s), [5, b(L(a, r))]) : [3, 4];
           case 3:
             ((s = c + e.sent()), (e.label = 4));
           case 4:
@@ -6827,8 +6787,7 @@
             ((o = 0), (e.label = 2));
           case 2:
             return o < s.length ?
-              ((h = (c = a).push), [5, b(L(s[o], r))]) :
-              [3, 5];
+              ((h = (c = a).push), [5, b(L(s[o], r))]) : [3, 5];
           case 3:
             (h.apply(c, [e.sent()]), (e.label = 4));
           case 4:
@@ -6845,8 +6804,7 @@
         switch (e.label) {
           case 0:
             return t.id && t.id.name ?
-              ((i = new P(r)), [5, b(bi(t, i))]) :
-              [3, 2];
+              ((i = new P(r)), [5, b(bi(t, i))]) : [3, 2];
           case 1:
             return ((n = e.sent()), i.const(t.id.name, n), [2, n]);
           case 2:
@@ -6876,21 +6834,19 @@
             return ((i = r.global()), [5, b(L(t.source, r))]);
           case 1:
             return ((n = e.sent()),
-                (a = i.find(xt + n)) &&
-                (a = a.get()) &&
-                ("function" == typeof a ?
-                  (s = a()) :
-                  "object" == typeof a && (s = a)),
-                s && "object" == typeof s) ?
-              [2, Promise.resolve(s)] :
-              [
-                2,
-                Promise.reject(
-                  new TypeError(
-                    'Failed to resolve module specifier "' + n + '"',
-                  ),
+              (a = i.find(xt + n)) &&
+              (a = a.get()) &&
+              ("function" == typeof a ?
+                (s = a()) :
+                "object" == typeof a && (s = a)),
+              s && "object" == typeof s) ? [2, Promise.resolve(s)] : [
+              2,
+              Promise.reject(
+                new TypeError(
+                  'Failed to resolve module specifier "' + n + '"',
                 ),
-              ];
+              ),
+            ];
         }
       });
     },
@@ -6951,15 +6907,10 @@
               ((l = t.properties[h]),
                 s ?
                 a || "var" === n ?
-                "Property" !== l.type ?
-                [3, 5] :
-                "Identifier" !== (p = l.value).type ?
-                [3, 2] :
+                "Property" !== l.type ? [3, 5] :
+                "Identifier" !== (p = l.value).type ? [3, 2] :
                 (r[n](p.name, a ? I : "var" === n ? C : void 0),
-                  [3, 4]) :
-                [3, 7] :
-                [3, 8]) :
-              [3, 18];
+                  [3, 4]) : [3, 7] : [3, 8]) : [3, 18];
           case 2:
             return [
               5,
@@ -6991,16 +6942,14 @@
           case 7:
             return [3, 17];
           case 8:
-            return "Property" !== l.type ?
-              [3, 15] :
+            return "Property" !== l.type ? [3, 15] :
               ((u = void 0), l.computed ? [5, b(L(l.key, r))] : [3, 10]);
           case 9:
             return ((u = e.sent()), [3, 11]);
           case 10:
             ((u = l.key.name), (e.label = 11));
           case 11:
-            return (c.push(u), "Identifier" !== (p = l.value).type) ?
-              [3, 12] :
+            return (c.push(u), "Identifier" !== (p = l.value).type) ? [3, 12] :
               (r[n](p.name, o[u]), [3, 14]);
           case 12:
             return [
@@ -7080,11 +7029,9 @@
           case 4:
             return [3, 13];
           case 5:
-            return "Identifier" !== l.type ?
-              [3, 9] :
+            return "Identifier" !== l.type ? [3, 9] :
               n ?
-              (r[n](l.name, o[h]), [3, 8]) :
-              [3, 6];
+              (r[n](l.name, o[h]), [3, 8]) : [3, 6];
           case 6:
             return [
               5,
@@ -7099,17 +7046,15 @@
           case 8:
             return [3, 13];
           case 9:
-            return "RestElement" !== l.type ?
-              [3, 11] :
-              [
-                5,
-                b(
-                  Mt(l, r, {
-                    kind: n,
-                    feed: o.slice(h),
-                  }),
-                ),
-              ];
+            return "RestElement" !== l.type ? [3, 11] : [
+              5,
+              b(
+                Mt(l, r, {
+                  kind: n,
+                  feed: o.slice(h),
+                }),
+              ),
+            ];
           case 10:
             return (e.sent(), [3, 13]);
           case 11:
@@ -7173,11 +7118,9 @@
           case 3:
             return [3, 10];
           case 4:
-            return "Identifier" !== c.type ?
-              [3, 8] :
+            return "Identifier" !== c.type ? [3, 8] :
               n ?
-              (r[n](c.name, o), [3, 7]) :
-              [3, 5];
+              (r[n](c.name, o), [3, 7]) : [3, 5];
           case 5:
             return [
               5,
@@ -7253,8 +7196,7 @@
           case 6:
             return [3, 10];
           case 7:
-            return "Identifier" !== l.type ?
-              [3, 8] :
+            return "Identifier" !== l.type ? [3, 8] :
               (r[n](l.name, c), [3, 10]);
           case 8:
             return [
@@ -7310,8 +7252,7 @@
         case 0:
           return t ?
             ((Ut = Ut || m({}, O, Rt, At, D, Lt, jt, qt)),
-              (i = Ut[t.type]) ? [5, b(i(t, r))] : [3, 2]) :
-            [2];
+              (i = Ut[t.type]) ? [5, b(i(t, r))] : [3, 2]) : [2];
         case 1:
           return [2, e.sent()];
         case 2:
@@ -7344,9 +7285,7 @@
               (a = i.hoisted),
               (a = void 0 !== a && a),
               (n = n ? r : new P(r)),
-              a ?
-              [3, 2] :
-              [
+              a ? [3, 2] : [
                 5,
                 b(
                   vi(t, n, {
@@ -7425,9 +7364,7 @@
         case 0:
           return (
             (i = t.label.name),
-            "WhileStatement" !== t.body.type ?
-            [3, 2] :
-            [
+            "WhileStatement" !== t.body.type ? [3, 2] : [
               5,
               b(
                 nr(t.body, r, {
@@ -7439,120 +7376,102 @@
         case 1:
           return [2, e.sent()];
         case 2:
-          return "DoWhileStatement" !== t.body.type ?
-            [3, 4] :
-            [
-              5,
-              b(
-                sr(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "DoWhileStatement" !== t.body.type ? [3, 4] : [
+            5,
+            b(
+              sr(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 3:
           return [2, e.sent()];
         case 4:
-          return "ForStatement" !== t.body.type ?
-            [3, 6] :
-            [
-              5,
-              b(
-                ar(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "ForStatement" !== t.body.type ? [3, 6] : [
+            5,
+            b(
+              ar(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 5:
           return [2, e.sent()];
         case 6:
-          return "ForInStatement" !== t.body.type ?
-            [3, 8] :
-            [
-              5,
-              b(
-                or(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "ForInStatement" !== t.body.type ? [3, 8] : [
+            5,
+            b(
+              or(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 7:
           return [2, e.sent()];
         case 8:
-          return "ForOfStatement" !== t.body.type ?
-            [3, 10] :
-            [
-              5,
-              b(
-                cr(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "ForOfStatement" !== t.body.type ? [3, 10] : [
+            5,
+            b(
+              cr(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 9:
           return [2, e.sent()];
         case 10:
-          return "BlockStatement" !== t.body.type ?
-            [3, 12] :
-            [
-              5,
-              b(
-                Gt(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "BlockStatement" !== t.body.type ? [3, 12] : [
+            5,
+            b(
+              Gt(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 11:
           return [2, e.sent()];
         case 12:
-          return "WithStatement" !== t.body.type ?
-            [3, 14] :
-            [
-              5,
-              b(
-                Zt(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "WithStatement" !== t.body.type ? [3, 14] : [
+            5,
+            b(
+              Zt(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 13:
           return [2, e.sent()];
         case 14:
-          return "IfStatement" !== t.body.type ?
-            [3, 16] :
-            [
-              5,
-              b(
-                Jt(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "IfStatement" !== t.body.type ? [3, 16] : [
+            5,
+            b(
+              Jt(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 15:
           return [2, e.sent()];
         case 16:
-          return "SwitchStatement" !== t.body.type ?
-            [3, 18] :
-            [
-              5,
-              b(
-                $t(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "SwitchStatement" !== t.body.type ? [3, 18] : [
+            5,
+            b(
+              $t(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 17:
           return [2, e.sent()];
         case 18:
-          return "TryStatement" !== t.body.type ?
-            [3, 20] :
-            [
-              5,
-              b(
-                rr(t.body, r, {
-                  label: i,
-                }),
-              ),
-            ];
+          return "TryStatement" !== t.body.type ? [3, 20] : [
+            5,
+            b(
+              rr(t.body, r, {
+                label: i,
+              }),
+            ),
+          ];
         case 19:
           return [2, e.sent()];
         case 20:
@@ -7573,12 +7492,8 @@
             return (a.apply(s, [e.sent()]), [5, b(L(t.body, n))]);
           case 2:
             return (o = e.sent()) === _ ?
-              o.LABEL && o.LABEL === i.label ?
-              [2] :
-              [2, o] :
-              o === k || o === S ?
-              [2, o] :
-              [2];
+              o.LABEL && o.LABEL === i.label ? [2] : [2, o] :
+              o === k || o === S ? [2, o] : [2];
         }
       })
     );
@@ -7602,12 +7517,8 @@
             ((n = e.sent()), (e.label = 5));
           case 5:
             return n === _ ?
-              n.LABEL && n.LABEL === i.label ?
-              [2] :
-              [2, n] :
-              n === k || n === S ?
-              [2, n] :
-              [2];
+              n.LABEL && n.LABEL === i.label ? [2] : [2, n] :
+              n === k || n === S ? [2, n] : [2];
         }
       })
     );
@@ -7627,11 +7538,7 @@
             return a < t.cases.length ?
               ((o = t.cases[a]),
                 (c = !s) ?
-                (h = !o.test) ?
-                [3, 4] :
-                [5, b(L(o.test, r))] :
-                [3, 5]) :
-              [3, 8];
+                (h = !o.test) ? [3, 4] : [5, b(L(o.test, r))] : [3, 5]) : [3, 8];
           case 3:
             ((h = e.sent() === n), (e.label = 4));
           case 4:
@@ -7659,9 +7566,7 @@
         case 0:
           ((i = 0), (e.label = 1));
         case 1:
-          return i < t.consequent.length ?
-            [5, b(L(t.consequent[i], r))] :
-            [3, 4];
+          return i < t.consequent.length ? [5, b(L(t.consequent[i], r))] : [3, 4];
         case 2:
           if ((n = e.sent()) === _ || n === k || n === S) return [2, n];
           e.label = 3;
@@ -7728,12 +7633,8 @@
             return [7];
           case 12:
             return n === _ ?
-              n.LABEL && n.LABEL === i.label ?
-              [2] :
-              [2, n] :
-              n === k || n === S ?
-              [2, n] :
-              [2];
+              n.LABEL && n.LABEL === i.label ? [2] : [2, n] :
+              n === k || n === S ? [2, n] : [2];
         }
       })
     );
@@ -7769,16 +7670,10 @@
             return e.sent() ? [5, b(L(t.body, r))] : [3, 3];
           case 2:
             return (n = e.sent()) === _ ?
-              n.LABEL === i.label ?
-              [3, 3] :
-              [2, n] :
+              n.LABEL === i.label ? [3, 3] : [2, n] :
               n === k ?
-              n.LABEL === i.label ?
-              [3, 0] :
-              [2, n] :
-              n === S ?
-              [2, n] :
-              [3, 0];
+              n.LABEL === i.label ? [3, 0] : [2, n] :
+              n === S ? [2, n] : [3, 0];
           case 3:
             return [2];
         }
@@ -7832,17 +7727,14 @@
             return s ?
               ((a = new P(n)),
                 (o = void 0),
-                "BlockStatement" !== t.body.type ?
-                [3, 7] :
-                [
+                "BlockStatement" !== t.body.type ? [3, 7] : [
                   5,
                   b(
                     Gt(t.body, a, {
                       invasived: !0,
                     }),
                   ),
-                ]) :
-              [3, 12];
+                ]) : [3, 12];
           case 6:
             return ((o = e.sent()), [3, 9]);
           case 7:
@@ -7886,8 +7778,7 @@
                       value: o,
                     }),
                   ),
-                ]) :
-              [3, 5];
+                ]) : [3, 5];
           case 3:
             if ((o = e.sent()) === _)
               return o.LABEL === i.label ? [3, 5] : [2, o];
@@ -7931,21 +7822,18 @@
                   })),
                 (h = void 0),
                 (ft.RES = c.next()),
-                [4, ft]) :
-              [3, 8];
+                [4, ft]) : [3, 8];
           case 2:
             ((h = e.sent()), (e.label = 3));
           case 3:
-            return h.done ?
-              [3, 7] :
-              [
-                5,
-                b(
-                  xi(n, s, {
-                    value: h.value,
-                  }),
-                ),
-              ];
+            return h.done ? [3, 7] : [
+              5,
+              b(
+                xi(n, s, {
+                  value: h.value,
+                }),
+              ),
+            ];
           case 4:
             if ((p = e.sent()) === _)
               return p.LABEL === a.label ? [3, 7] : [2, p];
@@ -7964,8 +7852,7 @@
               (u = l.next()),
               (e.label = 9));
           case 9:
-            return u.done ?
-              [3, 12] :
+            return u.done ? [3, 12] :
               ((d = u.value),
                 [
                   5,
@@ -8023,22 +7910,20 @@
           case 0:
             ((n = 0), (e.label = 1));
           case 1:
-            return n < t.declarations.length ?
-              [
-                5,
-                b(
-                  ur(
-                    t.declarations[n],
-                    r,
-                    m({
-                        kind: t.kind,
-                      },
-                      i,
-                    ),
+            return n < t.declarations.length ? [
+              5,
+              b(
+                ur(
+                  t.declarations[n],
+                  r,
+                  m({
+                      kind: t.kind,
+                    },
+                    i,
                   ),
                 ),
-              ] :
-              [3, 4];
+              ),
+            ] : [3, 4];
           case 2:
             (e.sent(), (e.label = 3));
           case 3:
@@ -8095,8 +7980,7 @@
           case 6:
             ((l = e.sent()), (e.label = 7));
           case 7:
-            return ((h = l), "Identifier" !== t.id.type) ?
-              [3, 8] :
+            return ((h = l), "Identifier" !== t.id.type) ? [3, 8] :
               ((u = t.id.name),
                 "var" !== n || t.init || c ? r[n](u, h) : r.var(u, C),
                 t.init &&
@@ -8152,9 +8036,7 @@
             ((n = i.klass), (s = i.superClass), (a = 0), (e.label = 1));
           case 1:
             return a < t.body.length ?
-              "MethodDefinition" !== (o = t.body[a]).type ?
-              [3, 3] :
-              [
+              "MethodDefinition" !== (o = t.body[a]).type ? [3, 3] : [
                 5,
                 b(
                   fr(o, r, {
@@ -8162,36 +8044,31 @@
                     superClass: s,
                   }),
                 ),
-              ] :
-              [3, 8];
+              ] : [3, 8];
           case 2:
             return (e.sent(), [3, 7]);
           case 3:
-            return "PropertyDefinition" === o.type && o.static ?
-              [
-                5,
-                b(
-                  mr(o, r, {
-                    klass: n,
-                    superClass: s,
-                  }),
-                ),
-              ] :
-              [3, 5];
+            return "PropertyDefinition" === o.type && o.static ? [
+              5,
+              b(
+                mr(o, r, {
+                  klass: n,
+                  superClass: s,
+                }),
+              ),
+            ] : [3, 5];
           case 4:
             return (e.sent(), [3, 7]);
           case 5:
-            return "StaticBlock" !== o.type ?
-              [3, 7] :
-              [
-                5,
-                b(
-                  yr(o, r, {
-                    klass: n,
-                    superClass: s,
-                  }),
-                ),
-              ];
+            return "StaticBlock" !== o.type ? [3, 7] : [
+              5,
+              b(
+                yr(o, r, {
+                  klass: n,
+                  superClass: s,
+                }),
+              ),
+            ];
           case 6:
             (e.sent(), (e.label = 7));
           case 7:
@@ -8210,9 +8087,7 @@
       v(this, function(e) {
         switch (e.label) {
           case 0:
-            return ((n = i.klass), (s = i.superClass), (o = !1), t.computed) ?
-              [5, b(L(t.key, r))] :
-              [3, 2];
+            return ((n = i.klass), (s = i.superClass), (o = !1), t.computed) ? [5, b(L(t.key, r))] : [3, 2];
           case 1:
             return ((a = e.sent()), [3, 3]);
           case 2:
@@ -8278,9 +8153,7 @@
       v(this, function(e) {
         switch (e.label) {
           case 0:
-            return ((n = i.klass), (s = i.superClass), (o = !1), t.computed) ?
-              [5, b(L(t.key, r))] :
-              [3, 2];
+            return ((n = i.klass), (s = i.superClass), (o = !1), t.computed) ? [5, b(L(t.key, r))] : [3, 2];
           case 1:
             return ((a = e.sent()), [3, 3]);
           case 2:
@@ -8300,13 +8173,11 @@
                     value: {},
                   }),
                   (h = h[E])),
-                t.value) ?
-              [3, 4] :
+                t.value) ? [3, 4] :
               ((h[a] = void 0), [3, 7]);
           case 4:
             return "FunctionExpression" !== t.value.type &&
-              "ArrowFunctionExpression" !== t.value.type ?
-              [3, 5] :
+              "ArrowFunctionExpression" !== t.value.type ? [3, 5] :
               ((h[a] = R(t.value, c, {
                   superClass: s,
                 })),
@@ -8396,15 +8267,12 @@
       switch (e.label) {
         case 0:
           return ((i = r.global()),
-              "FunctionDeclaration" !== t.declaration.type) ?
-            [3, 1] :
+              "FunctionDeclaration" !== t.declaration.type) ? [3, 1] :
             ((n = R(t.declaration, r)),
               r.func(t.declaration.id.name, n),
               [3, 5]);
         case 1:
-          return "ClassDeclaration" !== t.declaration.type ?
-            [3, 3] :
-            [5, b(bi(t.declaration, r))];
+          return "ClassDeclaration" !== t.declaration.type ? [3, 3] : [5, b(bi(t.declaration, r))];
         case 2:
           return ((n = e.sent()), r.func(t.declaration.id.name, n), [3, 5]);
         case 3:
@@ -8429,20 +8297,16 @@
       switch (e.label) {
         case 0:
           return ((i = r.global()), t.declaration) ?
-            "FunctionDeclaration" !== t.declaration.type ?
-            [3, 1] :
+            "FunctionDeclaration" !== t.declaration.type ? [3, 1] :
             ((n = R(t.declaration, r)),
               r.func(t.declaration.id.name, n),
               (c = i.find(A)) &&
               (s = c.get()) &&
               "object" == typeof s &&
               (s[t.declaration.id.name] = n),
-              [3, 5]) :
-            [3, 6];
+              [3, 5]) : [3, 6];
         case 1:
-          return "ClassDeclaration" !== t.declaration.type ?
-            [3, 3] :
-            [5, b(bi(t.declaration, r))];
+          return "ClassDeclaration" !== t.declaration.type ? [3, 3] : [5, b(bi(t.declaration, r))];
         case 2:
           return (
             (n = e.sent()),
@@ -8454,9 +8318,7 @@
             [3, 5]
           );
         case 3:
-          return "VariableDeclaration" !== t.declaration.type ?
-            [3, 5] :
-            [5, b(lr(t.declaration, r))];
+          return "VariableDeclaration" !== t.declaration.type ? [3, 5] : [5, b(lr(t.declaration, r))];
         case 4:
           if (
             (e.sent(), (c = i.find(A)) && (a = c.get()) && "object" == typeof a)
@@ -8956,8 +8818,7 @@
     MetaProperty: function(e, t) {
       return "new" === e.meta.name && "target" === e.property.name ?
         t.find(bt).get() :
-        "import" === e.meta.name && "meta" === e.property.name ?
-        {
+        "import" === e.meta.name && "meta" === e.property.name ? {
           url: "",
         } :
         void 0;
@@ -10004,15 +9865,11 @@
               (e.label = 1));
           case 1:
             return c < t.body.length ?
-              "FunctionDeclaration" !== (o = t.body[c]).type ?
-              [3, 2] :
-              (s.push(o), a.push(c), [3, 6]) :
-              [3, 7];
+              "FunctionDeclaration" !== (o = t.body[c]).type ? [3, 2] :
+              (s.push(o), a.push(c), [3, 6]) : [3, 7];
           case 2:
             return "VariableDeclaration" !== o.type ||
-              -1 === ["const", "let"].indexOf(o.kind) ?
-              [3, 4] :
-              [
+              -1 === ["const", "let"].indexOf(o.kind) ? [3, 4] : [
                 5,
                 b(
                   lr(o, r, {
@@ -10024,155 +9881,143 @@
           case 3:
             return (e.sent(), [3, 6]);
           case 4:
-            return n ?
-              [3, 6] :
-              [
-                5,
-                b(
-                  (function t(r, i) {
-                    var n, s, a, o, c;
-                    return v(this, function(e) {
-                      switch (e.label) {
-                        case 0:
-                          switch (r.type) {
-                            case "VariableDeclaration":
-                              return [3, 1];
-                            case "ForInStatement":
-                            case "ForOfStatement":
-                              return [3, 3];
-                            case "ForStatement":
-                              return [3, 5];
-                            case "WhileStatement":
-                            case "DoWhileStatement":
-                              return [3, 7];
-                            case "IfStatement":
-                              return [3, 9];
-                            case "BlockStatement":
-                              return [3, 13];
-                            case "SwitchStatement":
-                              return [3, 18];
-                            case "TryStatement":
-                              return [3, 25];
-                          }
-                          return [3, 38];
-                        case 1:
-                          return [
+            return n ? [3, 6] : [
+              5,
+              b(
+                (function t(r, i) {
+                  var n, s, a, o, c;
+                  return v(this, function(e) {
+                    switch (e.label) {
+                      case 0:
+                        switch (r.type) {
+                          case "VariableDeclaration":
+                            return [3, 1];
+                          case "ForInStatement":
+                          case "ForOfStatement":
+                            return [3, 3];
+                          case "ForStatement":
+                            return [3, 5];
+                          case "WhileStatement":
+                          case "DoWhileStatement":
+                            return [3, 7];
+                          case "IfStatement":
+                            return [3, 9];
+                          case "BlockStatement":
+                            return [3, 13];
+                          case "SwitchStatement":
+                            return [3, 18];
+                          case "TryStatement":
+                            return [3, 25];
+                        }
+                        return [3, 38];
+                      case 1:
+                        return [
+                          5,
+                          b(
+                            lr(r, i, {
+                              hoist: !0,
+                            }),
+                          ),
+                        ];
+                      case 2:
+                        return (e.sent(), [3, 38]);
+                      case 3:
+                        return "VariableDeclaration" !== r.left.type ? [3, 5] : [
+                          5,
+                          b(
+                            lr(r.left, i, {
+                              hoist: !0,
+                            }),
+                          ),
+                        ];
+                      case 4:
+                        (e.sent(), (e.label = 5));
+                      case 5:
+                        return "ForStatement" !== r.type ||
+                          "VariableDeclaration" !== r.init.type ? [3, 7] : [
                             5,
                             b(
-                              lr(r, i, {
+                              lr(r.init, i, {
                                 hoist: !0,
                               }),
                             ),
                           ];
-                        case 2:
-                          return (e.sent(), [3, 38]);
-                        case 3:
-                          return "VariableDeclaration" !== r.left.type ?
-                            [3, 5] :
-                            [
-                              5,
-                              b(
-                                lr(r.left, i, {
-                                  hoist: !0,
-                                }),
-                              ),
-                            ];
-                        case 4:
-                          (e.sent(), (e.label = 5));
-                        case 5:
-                          return "ForStatement" !== r.type ||
-                            "VariableDeclaration" !== r.init.type ?
-                            [3, 7] :
-                            [
-                              5,
-                              b(
-                                lr(r.init, i, {
-                                  hoist: !0,
-                                }),
-                              ),
-                            ];
-                        case 6:
-                          (e.sent(), (e.label = 7));
-                        case 7:
-                          return [5, b(t(r.body, i))];
-                        case 8:
-                          return (e.sent(), [3, 38]);
-                        case 9:
-                          return [5, b(t(r.consequent, i))];
-                        case 10:
-                          return (e.sent(), r.alternate) ?
-                            [5, b(t(r.alternate, i))] :
-                            [3, 12];
-                        case 11:
-                          (e.sent(), (e.label = 12));
-                        case 12:
-                          return [3, 38];
-                        case 13:
-                          ((c = 0), (e.label = 14));
-                        case 14:
-                          return c < r.body.length ?
-                            [5, b(t(r.body[c], i))] :
-                            [3, 17];
-                        case 15:
-                          (e.sent(), (e.label = 16));
-                        case 16:
-                          return (c++, [3, 14]);
-                        case 17:
-                          return [3, 38];
-                        case 18:
-                          ((c = 0), (e.label = 19));
-                        case 19:
-                          if (!(c < r.cases.length)) return [3, 24];
-                          ((n = 0), (e.label = 20));
-                        case 20:
-                          return n < r.cases[c].consequent.length ?
-                            [5, b(t(r.cases[c].consequent[n], i))] :
-                            [3, 23];
-                        case 21:
-                          (e.sent(), (e.label = 22));
-                        case 22:
-                          return (n++, [3, 20]);
-                        case 23:
-                          return (c++, [3, 19]);
-                        case 24:
-                          return [3, 38];
-                        case 25:
-                          ((s = r.block.body), (c = 0), (e.label = 26));
-                        case 26:
-                          return c < s.length ? [5, b(t(s[c], i))] : [3, 29];
-                        case 27:
-                          (e.sent(), (e.label = 28));
-                        case 28:
-                          return (c++, [3, 26]);
-                        case 29:
-                          if (!(a = r.handler && r.handler.body.body))
-                            return [3, 33];
-                          ((c = 0), (e.label = 30));
-                        case 30:
-                          return c < a.length ? [5, b(t(a[c], i))] : [3, 33];
-                        case 31:
-                          (e.sent(), (e.label = 32));
-                        case 32:
-                          return (c++, [3, 30]);
-                        case 33:
-                          if (!(o = r.finalizer && r.finalizer.body))
-                            return [3, 37];
-                          ((c = 0), (e.label = 34));
-                        case 34:
-                          return c < o.length ? [5, b(t(o[c], i))] : [3, 37];
-                        case 35:
-                          (e.sent(), (e.label = 36));
-                        case 36:
-                          return (c++, [3, 34]);
-                        case 37:
-                          return [3, 38];
-                        case 38:
-                          return [2];
-                      }
-                    });
-                  })(o, r),
-                ),
-              ];
+                      case 6:
+                        (e.sent(), (e.label = 7));
+                      case 7:
+                        return [5, b(t(r.body, i))];
+                      case 8:
+                        return (e.sent(), [3, 38]);
+                      case 9:
+                        return [5, b(t(r.consequent, i))];
+                      case 10:
+                        return (e.sent(), r.alternate) ? [5, b(t(r.alternate, i))] : [3, 12];
+                      case 11:
+                        (e.sent(), (e.label = 12));
+                      case 12:
+                        return [3, 38];
+                      case 13:
+                        ((c = 0), (e.label = 14));
+                      case 14:
+                        return c < r.body.length ? [5, b(t(r.body[c], i))] : [3, 17];
+                      case 15:
+                        (e.sent(), (e.label = 16));
+                      case 16:
+                        return (c++, [3, 14]);
+                      case 17:
+                        return [3, 38];
+                      case 18:
+                        ((c = 0), (e.label = 19));
+                      case 19:
+                        if (!(c < r.cases.length)) return [3, 24];
+                        ((n = 0), (e.label = 20));
+                      case 20:
+                        return n < r.cases[c].consequent.length ? [5, b(t(r.cases[c].consequent[n], i))] : [3, 23];
+                      case 21:
+                        (e.sent(), (e.label = 22));
+                      case 22:
+                        return (n++, [3, 20]);
+                      case 23:
+                        return (c++, [3, 19]);
+                      case 24:
+                        return [3, 38];
+                      case 25:
+                        ((s = r.block.body), (c = 0), (e.label = 26));
+                      case 26:
+                        return c < s.length ? [5, b(t(s[c], i))] : [3, 29];
+                      case 27:
+                        (e.sent(), (e.label = 28));
+                      case 28:
+                        return (c++, [3, 26]);
+                      case 29:
+                        if (!(a = r.handler && r.handler.body.body))
+                          return [3, 33];
+                        ((c = 0), (e.label = 30));
+                      case 30:
+                        return c < a.length ? [5, b(t(a[c], i))] : [3, 33];
+                      case 31:
+                        (e.sent(), (e.label = 32));
+                      case 32:
+                        return (c++, [3, 30]);
+                      case 33:
+                        if (!(o = r.finalizer && r.finalizer.body))
+                          return [3, 37];
+                        ((c = 0), (e.label = 34));
+                      case 34:
+                        return c < o.length ? [5, b(t(o[c], i))] : [3, 37];
+                      case 35:
+                        (e.sent(), (e.label = 36));
+                      case 36:
+                        return (c++, [3, 34]);
+                      case 37:
+                        return [3, 38];
+                      case 38:
+                        return [2];
+                    }
+                  });
+                })(o, r),
+              ),
+            ];
           case 5:
             (e.sent(), (e.label = 6));
           case 6:
@@ -10271,22 +10116,18 @@
                 ((r = 0), (e.label = 4));
               case 4:
                 return r < p.length ?
-                  "Identifier" !== (i = p[r]).type ?
-                  [3, 5] :
-                  (t.var(i.name, a[r]), [3, 9]) :
-                  [3, 10];
+                  "Identifier" !== (i = p[r]).type ? [3, 5] :
+                  (t.var(i.name, a[r]), [3, 9]) : [3, 10];
               case 5:
-                return "RestElement" !== i.type ?
-                  [3, 7] :
-                  [
-                    5,
-                    b(
-                      Mt(i, t, {
-                        kind: "var",
-                        feed: a.slice(r),
-                      }),
-                    ),
-                  ];
+                return "RestElement" !== i.type ? [3, 7] : [
+                  5,
+                  b(
+                    Mt(i, t, {
+                      kind: "var",
+                      feed: a.slice(r),
+                    }),
+                  ),
+                ];
               case 6:
                 return (e.sent(), [3, 9]);
               case 7:
@@ -10304,9 +10145,7 @@
               case 9:
                 return (r++, [3, 4]);
               case 10:
-                return "BlockStatement" !== c.body.type ?
-                  [3, 13] :
-                  [5, b(vi(c.body, t))];
+                return "BlockStatement" !== c.body.type ? [3, 13] : [5, b(vi(c.body, t))];
               case 11:
                 return (
                   e.sent(),
@@ -10330,11 +10169,8 @@
                   ((S.RES = n), (n = S)),
                   (e.label = 15));
               case 15:
-                return n === S ?
-                  [2, n.RES] :
-                  s ?
-                  [2, t.find("this").get()] :
-                  [2];
+                return n === S ? [2, n.RES] :
+                  s ? [2, t.find("this").get()] : [2];
             }
           });
         }),
@@ -10431,9 +10267,7 @@
                     ((r = 0), (e.label = 1));
                   case 1:
                     return r < a.length ?
-                      "PropertyDefinition" !== (i = a[r]).type || i.static ?
-                      [3, 3] :
-                      [
+                      "PropertyDefinition" !== (i = a[r]).type || i.static ? [3, 3] : [
                         5,
                         b(
                           mr(i, n, {
@@ -10441,8 +10275,7 @@
                             superClass: s,
                           }),
                         ),
-                      ] :
-                      [3, 4];
+                      ] : [3, 4];
                   case 2:
                     (e.sent(), (e.label = 3));
                   case 3:
@@ -10512,9 +10345,7 @@
             (n = i.value),
             (s = t.left),
             (a = new P(r)),
-            "VariableDeclaration" !== s.type ?
-            [3, 2] :
-            [
+            "VariableDeclaration" !== s.type ? [3, 2] : [
               5,
               b(
                 lr(s, a, {
@@ -10526,16 +10357,14 @@
         case 1:
           return (e.sent(), [3, 6]);
         case 2:
-          return "Identifier" !== s.type ?
-            [3, 4] :
-            [
-              5,
-              b(
-                wr(s, r, {
-                  getVar: !0,
-                }),
-              ),
-            ];
+          return "Identifier" !== s.type ? [3, 4] : [
+            5,
+            b(
+              wr(s, r, {
+                getVar: !0,
+              }),
+            ),
+          ];
         case 3:
           return (e.sent().set(n), [3, 6]);
         case 4:
@@ -10550,16 +10379,14 @@
         case 5:
           (e.sent(), (e.label = 6));
         case 6:
-          return "BlockStatement" !== t.body.type ?
-            [3, 8] :
-            [
-              5,
-              b(
-                Gt(t.body, a, {
-                  invasived: !0,
-                }),
-              ),
-            ];
+          return "BlockStatement" !== t.body.type ? [3, 8] : [
+            5,
+            b(
+              Gt(t.body, a, {
+                invasived: !0,
+              }),
+            ),
+          ];
         case 7:
           return ((o = e.sent()), [3, 10]);
         case 8:
